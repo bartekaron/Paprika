@@ -2,4 +2,31 @@ body {
     background-color: papayawhip;
     color: saddlebrown;
 }
-
+img{
+    border: 1px;
+    width: 1300px;
+    height: 150px;
+}
+.nulla{
+    background-color: lightgreen;
+}
+.piros{
+    background-color: rgb(247, 66, 66);
+}
+.lila{
+    background-color: rgb(202, 10, 202);
+}
+li{
+    list-style-image: url(chili-pepper-icon.gif);
+}
+h1{
+    position: relative;
+    top: -110px;
+    color: white;
+}
+.fajta{
+    text-align: left;
+}
+table,th,td{
+    border: 5px black;
+}

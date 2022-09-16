@@ -4,8 +4,7 @@ body {
 }
 
 img{
-    border: 1px;
-    width: 1300px;
+    width: 100%; 
     height: 150px;
 }
 
@@ -27,27 +26,37 @@ img{
     text-align: center;
 }
 
-li{
-    list-style-image: url(chili-pepper-icon.gif);
-}
 a{
-    border: 1px solid black;
-
+    color: black;
+    
+}
+a:hover{
+    color:black;
 }
 
 
 h1{
     position: relative;
     top: -110px;
-    color: white;
+    color: black;
+    padding-left: 10px;
 }
 
 .fajta{
-    text-align: left;
-    width: 250px;
-    height: 450px;
+    position: relative;  
+    width: 50%;
+    height: 50%;
+    right: -3%;
 }
-
+li{
+    border: 1px solid blue;
+    margin: 0 50% 0 0;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    text-align: left;
+    background-color: white;
+    color: black;
+}
 table,th,td{
     border: 1px solid black;
 }
@@ -63,7 +72,7 @@ table{
 .mutatas p{
     text-align: left;
     position: relative;
-    top: -420px;
+    top: -430px;
     right: -500px;
     width: 700px;
 

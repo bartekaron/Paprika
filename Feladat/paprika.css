@@ -69,13 +69,14 @@ table{
     position: relative;
     right: -40%;
     top: 50px;
+    width: 50%;
 }
 .mutatas p{
     text-align: left;
     position: relative;
     top: 0px;
     right: -40%;
-    width: 700px;
+    width: 50%;
 
 }
 .mutatas h2{
@@ -83,21 +84,21 @@ table{
     position: relative;
     top: -20px;
     right: -40%;
-    width: 700px;
+    width: 50%;
 
 }
 .csipos p{
     text-align: left;
     position: relative;
     top: 50px;
-    width:700px;
+    width: 50%;
     right: -40%;
 }
 .csipos h2{
     text-align: left;
     position: relative;
     top: 40px;
-    width:700px;
+    width: 50%;
     right: -40%;
 }
 
@@ -228,18 +229,22 @@ body {
 .logo h1{
   position: absolute;
   top: 60px;
-  right: 95%;
-  font-size: 1.2rem;
+  right: 85%;
   color: #0e2431;
 }
 .logo p{
     position: absolute;
-  top: 60px;
-  right: 95%;
+  top: 150px;
+  right: 75%;
   font-size: 1.2rem;
   color: #0e2431;
 }
-
+@media screen and (max-width: 1500px) {
+  .navbar {
+    float: none;
+    width: 100%;
+  }
+}
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
 }

@@ -48,15 +48,39 @@ h1{
     height: 50%;
     right: -3%;
 }
+.fajta1{
+  position: relative;  
+  width: 50%;
+  height: 50%;
+  right: -3%;
+}
+.fajtap1{
+  position: relative;  
+  width: 50%;
+  height: 50%;
+  right: -3%;
+}
+
+
 li{
-    border: 1px solid blue;
-    margin: 0 70% 0 0;
+    /*border: 1px solid blue;
+    margin: 0 70% 0 0;*/
     padding-bottom: 1%;
     padding-left: 1%;
     padding-right: 1%;
     text-align: left;
-    background-color: white;
+    /*background-color: white;*/
     color: black;
+}
+.alap{
+  border: 1px solid blue;
+  margin: 0 70% 0 0;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: left;
+  background-color: white;
+  color: black;
 }
 table,th,td{
     border: 1px solid black;
@@ -65,16 +89,16 @@ th{
     width: 200px;
     height: 50px;
 }
-table{
+.table1{
     position: relative;
     right: -40%;
-    top: 50px;
+    top: -380px;
     width: 50%;
 }
 .mutatas p{
     text-align: left;
     position: relative;
-    top: 0px;
+    top: -430px;
     right: -40%;
     width: 50%;
 
@@ -82,25 +106,63 @@ table{
 .mutatas h2{
     text-align: left;
     position: relative;
-    top: -20px;
-    right: -40%;
+    top: -450px;
+    right: -56%;
     width: 50%;
 
 }
 .csipos p{
     text-align: left;
     position: relative;
-    top: 50px;
+    top: -400px;
     width: 50%;
     right: -40%;
 }
 .csipos h2{
     text-align: left;
     position: relative;
-    top: 40px;
+    top: -420px;
     width: 50%;
-    right: -40%;
+    right: -56%;
 }
+
+.mutatas1 p{
+  text-align: left;
+  position: relative;
+  top: -40px;
+  right: -40%;
+  width: 50%;
+
+}
+.mutatas1 h2{
+  text-align: left;
+  position: relative;
+  top: -60px;
+  right: -56%;
+  width: 50%;
+
+}
+.csipos1 p{
+  text-align: left;
+  position: relative;
+  top: -10px;
+  width: 50%;
+  right: -40%;
+}
+.csipos1 h2{
+  text-align: left;
+  position: relative;
+  top: -30px;
+  width: 50%;
+  right: -56%;
+}
+.table2{
+  position: relative;
+  right: -40%;
+  top: 0px;
+  width: 50%;
+}
+
 
 
 
@@ -146,7 +208,7 @@ body {
   text-decoration: none;
   color: #0e2431;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 16px;
   padding: 0.7rem;
 }
 
@@ -214,15 +276,15 @@ body {
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
-  margin-left: -40px;
+  margin-left: -120px;
   padding-left: 50px;
   transition: transform 0.5s ease-in-out;
   text-align: center;
 }
 
 .navbar .menu-items li {
-  margin-bottom: 1.2rem;
-  font-size: 1.5rem;
+  margin-bottom: 19.2px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -236,15 +298,33 @@ body {
     position: absolute;
   top: 150px;
   right: 75%;
-  font-size: 1.2rem;
+  font-size: 19.2px;
   color: #0e2431;
 }
-@media screen and (max-width: 1500px) {
-  .navbar {
-    float: none;
-    width: 100%;
+@media screen and (min-width: 600px) {
+  .navbar{
+    display: none;
   }
 }
+@media screen and (min-width: 600px) {
+  .szoveg2{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .szoveg1{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar1{
+    display: none;
+  }
+}
+
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
 }

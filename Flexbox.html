@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            color: black;
+        }
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+           /* text-align: center;*/
+            
+            
+        }
+        .container > *{
+            flex: 1 100%;
+            
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(197, 192, 191);
+            height: 180px;
+        }
+
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(197, 192, 191);
+            height: 180px;
+        }
+        .article1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(109, 202, 233);
+            height: 565px;
+            
+        }
+        .nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(139, 139, 137);
+
+        }
+        .aside2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(24, 0, 243);
+            color: white;
+        }
+
+        @media all and (min-width: 600px){
+            .article1{
+                flex: 3;
+            }
+            .nav{
+                order: 1;
+            }
+            .aside2{
+                order: 2;
+            }
+            .article1{
+                order:2;
+            
+            }
+            .footer{
+                order: 4;
+            }
+        }
+        @media all and (min-width: 600px){
+            .aside{
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Header</h1>
+        </header>
+        <aside class="aside nav">
+            <p>Nav</p>
+        </aside>
+        <article class="article1">
+            <p>Article</p>
+        </article>
+        <aside class="aside aside2">
+            <p>Aside</p>
+        </aside>
+        <footer class="footer">
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        body{
+            color: black;
+        }
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        .container > *{
+            flex: 1 100%;
+            
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(197, 192, 191);
+            height: 180px;
+        }
+    
+        
+        p{
+            justify-content: flex-end;
+        }
+        
+        .text{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .text{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        
+
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(197, 192, 191);
+            height: 180px;
+        }
+        .article1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(109, 202, 233);
+            height: 565px;
+            
+        }
+        .nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(139, 139, 137);
+
+        }
+        .aside2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(24, 0, 243);
+            color: white;
+        }
+
+
+        @media all and (min-width: 600px){
+            .article1{
+                flex: 5;
+            }
+          
+            .nav{
+                order: 3;
+            }
+            .aside2{
+                order: 4;
+            }
+            .article1{
+                order:4;
+            
+            }
+            .footer{
+                order: 6;
+            }
+        }
+        @media all and (min-width: 600px){
+            .aside{
+                flex: 1;
+            }
+            
+        }
+        @media all and (max-width: 600px){
+            .header{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <p class="elso"><img src="christmas-tree.png" alt="fa">Header</p>
+            <p class="masodik">Hamburger</p>
+            <p class="masodik">Krumpli</p>
+            <p class="masodik">Hotdog</p>
+        </header>
+        <aside class="aside nav">
+            <p>Nav</p>
+        </aside>
+        <article class="article1">  
+            <p>Article</p>
+        </article>
+        <aside class="aside aside2">
+            <p>Aside</p>
+        </aside>
+        <footer class="footer">
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+</html>
